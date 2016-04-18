@@ -5,6 +5,9 @@
 //  Created by zqf on 16/4/11.
 //  Copyright © 2016年 zengqingfu. All rights reserved.
 //
+//github地址：https://github.com/zengqingf/ZQFVLCMoviePlayer.git
+//欢迎访问作者博客：http://blog.csdn.net/techfu
+//
 
 #import "ZQFVLCPlayerViewController.h"
 #import <MobileVLCKit/MobileVLCKit.h>

@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FE8CA7E1CBCA640006E101C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA7D1CBCA640006E101C /* CoreGraphics.framework */; };
+		0FE8CA821CBCA657006E101C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA811CBCA657006E101C /* AudioToolbox.framework */; };
+		0FE8CA841CBCA661006E101C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA831CBCA661006E101C /* OpenGLES.framework */; };
+		0FE8CA861CBCA669006E101C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA851CBCA669006E101C /* CFNetwork.framework */; };
+		0FE8CA881CBCA671006E101C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA871CBCA671006E101C /* CoreText.framework */; };
+		0FE8CA8A1CBCA678006E101C /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA891CBCA678006E101C /* libbz2.tbd */; };
+		0FE8CA8C1CBCA67F006E101C /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA8B1CBCA67F006E101C /* libiconv.tbd */; };
+		0FE8CA8E1CBCA686006E101C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA8D1CBCA686006E101C /* QuartzCore.framework */; };
+		0FE8CA901CBCA691006E101C /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA8F1CBCA691006E101C /* MediaPlayer.framework */; };
+		0FE8CA921CBCA69B006E101C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA911CBCA69B006E101C /* AVFoundation.framework */; };
+		0FE8CA941CBCA6A3006E101C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA931CBCA6A3006E101C /* Security.framework */; };
+		0FE8CA961CBCA6B0006E101C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA951CBCA6B0006E101C /* libc++.tbd */; };
+		0FE8CA981CBCA6B7006E101C /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA971CBCA6B7006E101C /* VideoToolbox.framework */; };
+		0FE8CA9A1CBCA6C4006E101C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA991CBCA6C4006E101C /* CoreMedia.framework */; };
+		0FE8CA9C1CBCA6CA006E101C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE8CA9B1CBCA6CA006E101C /* CoreVideo.framework */; };
+		0FEB02011CBB58D500266900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB02001CBB58D500266900 /* main.m */; };
+		0FEB02041CBB58D500266900 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB02031CBB58D500266900 /* AppDelegate.m */; };
+		0FEB02071CBB58D500266900 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB02061CBB58D500266900 /* ViewController.m */; };
+		0FEB020A1CBB58D500266900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02081CBB58D500266900 /* Main.storyboard */; };
+		0FEB020C1CBB58D500266900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB020B1CBB58D500266900 /* Assets.xcassets */; };
+		0FEB020F1CBB58D500266900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB020D1CBB58D500266900 /* LaunchScreen.storyboard */; };
+		0FEB021A1CBB58D500266900 /* ZQFVLCMoviePlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB02191CBB58D500266900 /* ZQFVLCMoviePlayerTests.m */; };
+		0FEB023A1CBB5ABE00266900 /* ZQFVideoPlayer_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02261CBB5ABE00266900 /* ZQFVideoPlayer_close.png */; };
+		0FEB023B1CBB5ABE00266900 /* ZQFVideoPlayer_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02271CBB5ABE00266900 /* ZQFVideoPlayer_close@2x.png */; };
+		0FEB023C1CBB5ABE00266900 /* ZQFVideoPlayer_cross.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02281CBB5ABE00266900 /* ZQFVideoPlayer_cross.png */; };
+		0FEB023D1CBB5ABE00266900 /* ZQFVideoPlayer_cross@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02291CBB5ABE00266900 /* ZQFVideoPlayer_cross@2x.png */; };
+		0FEB023E1CBB5ABE00266900 /* ZQFVideoPlayer_next.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022A1CBB5ABE00266900 /* ZQFVideoPlayer_next.png */; };
+		0FEB023F1CBB5ABE00266900 /* ZQFVideoPlayer_next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022B1CBB5ABE00266900 /* ZQFVideoPlayer_next@2x.png */; };
+		0FEB02401CBB5ABE00266900 /* ZQFVideoPlayer_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022C1CBB5ABE00266900 /* ZQFVideoPlayer_pause.png */; };
+		0FEB02411CBB5ABE00266900 /* ZQFVideoPlayer_pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022D1CBB5ABE00266900 /* ZQFVideoPlayer_pause@2x.png */; };
+		0FEB02421CBB5ABE00266900 /* ZQFVideoPlayer_pause_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022E1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big.png */; };
+		0FEB02431CBB5ABE00266900 /* ZQFVideoPlayer_pause_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB022F1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big@2x.png */; };
+		0FEB02441CBB5ABE00266900 /* ZQFVideoPlayer_play.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02301CBB5ABE00266900 /* ZQFVideoPlayer_play.png */; };
+		0FEB02451CBB5ABE00266900 /* ZQFVideoPlayer_play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02311CBB5ABE00266900 /* ZQFVideoPlayer_play@2x.png */; };
+		0FEB02461CBB5ABE00266900 /* ZQFVideoPlayer_play_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02321CBB5ABE00266900 /* ZQFVideoPlayer_play_big.png */; };
+		0FEB02471CBB5ABE00266900 /* ZQFVideoPlayer_play_big@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02331CBB5ABE00266900 /* ZQFVideoPlayer_play_big@2x.png */; };
+		0FEB02481CBB5ABE00266900 /* ZQFVideoPlayer_rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02341CBB5ABE00266900 /* ZQFVideoPlayer_rewind.png */; };
+		0FEB02491CBB5ABE00266900 /* ZQFVideoPlayer_rewind@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02351CBB5ABE00266900 /* ZQFVideoPlayer_rewind@2x.png */; };
+		0FEB024A1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02361CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in.png */; };
+		0FEB024B1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02371CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in@2x.png */; };
+		0FEB024C1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02381CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out.png */; };
+		0FEB024D1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02391CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out@2x.png */; };
+		0FEB02511CBB5AE400266900 /* ZQFVLCPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FEB024F1CBB5AE400266900 /* ZQFVLCPlayerViewController.m */; };
+		0FEB02521CBB5AE400266900 /* ZQFVLCPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02501CBB5AE400266900 /* ZQFVLCPlayerViewController.xib */; };
+		0FEB02571CBB8D3300266900 /* ZQFVideoPlayer_fastback.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02531CBB8D3300266900 /* ZQFVideoPlayer_fastback.png */; };
+		0FEB02581CBB8D3300266900 /* ZQFVideoPlayer_fastback@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02541CBB8D3300266900 /* ZQFVideoPlayer_fastback@2x.png */; };
+		0FEB02591CBB8D3300266900 /* ZQFVideoPlayer_fastfarword.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02551CBB8D3300266900 /* ZQFVideoPlayer_fastfarword.png */; };
+		0FEB025A1CBB8D3300266900 /* ZQFVideoPlayer_fastfarword@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FEB02561CBB8D3300266900 /* ZQFVideoPlayer_fastfarword@2x.png */; };
+		0FEB025C1CBBB34B00266900 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FEB025B1CBBB34B00266900 /* MobileVLCKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FEB02161CBB58D500266900 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0FEB01F41CBB58D500266900 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0FEB01FB1CBB58D500266900;
+			remoteInfo = ZQFVLCMoviePlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE8CA7D1CBCA640006E101C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0FE8CA7F1CBCA64F006E101C /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		0FE8CA811CBCA657006E101C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0FE8CA831CBCA661006E101C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0FE8CA851CBCA669006E101C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0FE8CA871CBCA671006E101C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		0FE8CA891CBCA678006E101C /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		0FE8CA8B1CBCA67F006E101C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		0FE8CA8D1CBCA686006E101C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0FE8CA8F1CBCA691006E101C /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0FE8CA911CBCA69B006E101C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0FE8CA931CBCA6A3006E101C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		0FE8CA951CBCA6B0006E101C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0FE8CA971CBCA6B7006E101C /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		0FE8CA991CBCA6C4006E101C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0FE8CA9B1CBCA6CA006E101C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		0FEB01FC1CBB58D500266900 /* ZQFVLCMoviePlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZQFVLCMoviePlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEB02001CBB58D500266900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0FEB02021CBB58D500266900 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0FEB02031CBB58D500266900 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0FEB02051CBB58D500266900 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0FEB02061CBB58D500266900 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FEB02091CBB58D500266900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0FEB020B1CBB58D500266900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0FEB020E1CBB58D500266900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0FEB02101CBB58D500266900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FEB02151CBB58D500266900 /* ZQFVLCMoviePlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQFVLCMoviePlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FEB02191CBB58D500266900 /* ZQFVLCMoviePlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQFVLCMoviePlayerTests.m; sourceTree = "<group>"; };
+		0FEB021B1CBB58D500266900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FEB02261CBB5ABE00266900 /* ZQFVideoPlayer_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_close.png; sourceTree = "<group>"; };
+		0FEB02271CBB5ABE00266900 /* ZQFVideoPlayer_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_close@2x.png"; sourceTree = "<group>"; };
+		0FEB02281CBB5ABE00266900 /* ZQFVideoPlayer_cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_cross.png; sourceTree = "<group>"; };
+		0FEB02291CBB5ABE00266900 /* ZQFVideoPlayer_cross@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_cross@2x.png"; sourceTree = "<group>"; };
+		0FEB022A1CBB5ABE00266900 /* ZQFVideoPlayer_next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_next.png; sourceTree = "<group>"; };
+		0FEB022B1CBB5ABE00266900 /* ZQFVideoPlayer_next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_next@2x.png"; sourceTree = "<group>"; };
+		0FEB022C1CBB5ABE00266900 /* ZQFVideoPlayer_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_pause.png; sourceTree = "<group>"; };
+		0FEB022D1CBB5ABE00266900 /* ZQFVideoPlayer_pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_pause@2x.png"; sourceTree = "<group>"; };
+		0FEB022E1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_pause_big.png; sourceTree = "<group>"; };
+		0FEB022F1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_pause_big@2x.png"; sourceTree = "<group>"; };
+		0FEB02301CBB5ABE00266900 /* ZQFVideoPlayer_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_play.png; sourceTree = "<group>"; };
+		0FEB02311CBB5ABE00266900 /* ZQFVideoPlayer_play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_play@2x.png"; sourceTree = "<group>"; };
+		0FEB02321CBB5ABE00266900 /* ZQFVideoPlayer_play_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_play_big.png; sourceTree = "<group>"; };
+		0FEB02331CBB5ABE00266900 /* ZQFVideoPlayer_play_big@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_play_big@2x.png"; sourceTree = "<group>"; };
+		0FEB02341CBB5ABE00266900 /* ZQFVideoPlayer_rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_rewind.png; sourceTree = "<group>"; };
+		0FEB02351CBB5ABE00266900 /* ZQFVideoPlayer_rewind@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_rewind@2x.png"; sourceTree = "<group>"; };
+		0FEB02361CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_zoom_in.png; sourceTree = "<group>"; };
+		0FEB02371CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_zoom_in@2x.png"; sourceTree = "<group>"; };
+		0FEB02381CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_zoom_out.png; sourceTree = "<group>"; };
+		0FEB02391CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_zoom_out@2x.png"; sourceTree = "<group>"; };
+		0FEB024E1CBB5AE400266900 /* ZQFVLCPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZQFVLCPlayerViewController.h; sourceTree = "<group>"; };
+		0FEB024F1CBB5AE400266900 /* ZQFVLCPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZQFVLCPlayerViewController.m; sourceTree = "<group>"; };
+		0FEB02501CBB5AE400266900 /* ZQFVLCPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZQFVLCPlayerViewController.xib; sourceTree = "<group>"; };
+		0FEB02531CBB8D3300266900 /* ZQFVideoPlayer_fastback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_fastback.png; sourceTree = "<group>"; };
+		0FEB02541CBB8D3300266900 /* ZQFVideoPlayer_fastback@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_fastback@2x.png"; sourceTree = "<group>"; };
+		0FEB02551CBB8D3300266900 /* ZQFVideoPlayer_fastfarword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZQFVideoPlayer_fastfarword.png; sourceTree = "<group>"; };
+		0FEB02561CBB8D3300266900 /* ZQFVideoPlayer_fastfarword@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ZQFVideoPlayer_fastfarword@2x.png"; sourceTree = "<group>"; };
+		0FEB025B1CBBB34B00266900 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileVLCKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0FEB01F91CBB58D500266900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FE8CA9C1CBCA6CA006E101C /* CoreVideo.framework in Frameworks */,
+				0FE8CA9A1CBCA6C4006E101C /* CoreMedia.framework in Frameworks */,
+				0FE8CA981CBCA6B7006E101C /* VideoToolbox.framework in Frameworks */,
+				0FE8CA961CBCA6B0006E101C /* libc++.tbd in Frameworks */,
+				0FE8CA941CBCA6A3006E101C /* Security.framework in Frameworks */,
+				0FE8CA921CBCA69B006E101C /* AVFoundation.framework in Frameworks */,
+				0FE8CA901CBCA691006E101C /* MediaPlayer.framework in Frameworks */,
+				0FE8CA8E1CBCA686006E101C /* QuartzCore.framework in Frameworks */,
+				0FE8CA8C1CBCA67F006E101C /* libiconv.tbd in Frameworks */,
+				0FE8CA8A1CBCA678006E101C /* libbz2.tbd in Frameworks */,
+				0FE8CA881CBCA671006E101C /* CoreText.framework in Frameworks */,
+				0FE8CA861CBCA669006E101C /* CFNetwork.framework in Frameworks */,
+				0FE8CA841CBCA661006E101C /* OpenGLES.framework in Frameworks */,
+				0FE8CA821CBCA657006E101C /* AudioToolbox.framework in Frameworks */,
+				0FE8CA7E1CBCA640006E101C /* CoreGraphics.framework in Frameworks */,
+				0FEB025C1CBBB34B00266900 /* MobileVLCKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEB02121CBB58D500266900 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FE8CA7C1CBCA623006E101C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FE8CA9B1CBCA6CA006E101C /* CoreVideo.framework */,
+				0FE8CA991CBCA6C4006E101C /* CoreMedia.framework */,
+				0FE8CA971CBCA6B7006E101C /* VideoToolbox.framework */,
+				0FE8CA951CBCA6B0006E101C /* libc++.tbd */,
+				0FE8CA931CBCA6A3006E101C /* Security.framework */,
+				0FE8CA911CBCA69B006E101C /* AVFoundation.framework */,
+				0FE8CA8F1CBCA691006E101C /* MediaPlayer.framework */,
+				0FE8CA8D1CBCA686006E101C /* QuartzCore.framework */,
+				0FE8CA8B1CBCA67F006E101C /* libiconv.tbd */,
+				0FE8CA891CBCA678006E101C /* libbz2.tbd */,
+				0FE8CA871CBCA671006E101C /* CoreText.framework */,
+				0FE8CA851CBCA669006E101C /* CFNetwork.framework */,
+				0FE8CA831CBCA661006E101C /* OpenGLES.framework */,
+				0FE8CA811CBCA657006E101C /* AudioToolbox.framework */,
+				0FE8CA7F1CBCA64F006E101C /* AudioUnit.framework */,
+				0FE8CA7D1CBCA640006E101C /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0FEB01F31CBB58D500266900 = {
+			isa = PBXGroup;
+			children = (
+				0FE8CA7C1CBCA623006E101C /* Frameworks */,
+				0FEB01FE1CBB58D500266900 /* ZQFVLCMoviePlayer */,
+				0FEB02181CBB58D500266900 /* ZQFVLCMoviePlayerTests */,
+				0FEB01FD1CBB58D500266900 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0FEB01FD1CBB58D500266900 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB01FC1CBB58D500266900 /* ZQFVLCMoviePlayer.app */,
+				0FEB02151CBB58D500266900 /* ZQFVLCMoviePlayerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0FEB01FE1CBB58D500266900 /* ZQFVLCMoviePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB02241CBB5ABE00266900 /* ZQFVLCMoviePlayerClass */,
+				0FEB02021CBB58D500266900 /* AppDelegate.h */,
+				0FEB02031CBB58D500266900 /* AppDelegate.m */,
+				0FEB02051CBB58D500266900 /* ViewController.h */,
+				0FEB02061CBB58D500266900 /* ViewController.m */,
+				0FEB02081CBB58D500266900 /* Main.storyboard */,
+				0FEB020B1CBB58D500266900 /* Assets.xcassets */,
+				0FEB020D1CBB58D500266900 /* LaunchScreen.storyboard */,
+				0FEB02101CBB58D500266900 /* Info.plist */,
+				0FEB01FF1CBB58D500266900 /* Supporting Files */,
+			);
+			path = ZQFVLCMoviePlayer;
+			sourceTree = "<group>";
+		};
+		0FEB01FF1CBB58D500266900 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB02001CBB58D500266900 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FEB02181CBB58D500266900 /* ZQFVLCMoviePlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB02191CBB58D500266900 /* ZQFVLCMoviePlayerTests.m */,
+				0FEB021B1CBB58D500266900 /* Info.plist */,
+			);
+			path = ZQFVLCMoviePlayerTests;
+			sourceTree = "<group>";
+		};
+		0FEB02241CBB5ABE00266900 /* ZQFVLCMoviePlayerClass */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB025B1CBBB34B00266900 /* MobileVLCKit.framework */,
+				0FEB02251CBB5ABE00266900 /* Assets */,
+				0FEB024E1CBB5AE400266900 /* ZQFVLCPlayerViewController.h */,
+				0FEB024F1CBB5AE400266900 /* ZQFVLCPlayerViewController.m */,
+				0FEB02501CBB5AE400266900 /* ZQFVLCPlayerViewController.xib */,
+			);
+			path = ZQFVLCMoviePlayerClass;
+			sourceTree = "<group>";
+		};
+		0FEB02251CBB5ABE00266900 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				0FEB02531CBB8D3300266900 /* ZQFVideoPlayer_fastback.png */,
+				0FEB02541CBB8D3300266900 /* ZQFVideoPlayer_fastback@2x.png */,
+				0FEB02551CBB8D3300266900 /* ZQFVideoPlayer_fastfarword.png */,
+				0FEB02561CBB8D3300266900 /* ZQFVideoPlayer_fastfarword@2x.png */,
+				0FEB02261CBB5ABE00266900 /* ZQFVideoPlayer_close.png */,
+				0FEB02271CBB5ABE00266900 /* ZQFVideoPlayer_close@2x.png */,
+				0FEB02281CBB5ABE00266900 /* ZQFVideoPlayer_cross.png */,
+				0FEB02291CBB5ABE00266900 /* ZQFVideoPlayer_cross@2x.png */,
+				0FEB022A1CBB5ABE00266900 /* ZQFVideoPlayer_next.png */,
+				0FEB022B1CBB5ABE00266900 /* ZQFVideoPlayer_next@2x.png */,
+				0FEB022C1CBB5ABE00266900 /* ZQFVideoPlayer_pause.png */,
+				0FEB022D1CBB5ABE00266900 /* ZQFVideoPlayer_pause@2x.png */,
+				0FEB022E1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big.png */,
+				0FEB022F1CBB5ABE00266900 /* ZQFVideoPlayer_pause_big@2x.png */,
+				0FEB02301CBB5ABE00266900 /* ZQFVideoPlayer_play.png */,
+				0FEB02311CBB5ABE00266900 /* ZQFVideoPlayer_play@2x.png */,
+				0FEB02321CBB5ABE00266900 /* ZQFVideoPlayer_play_big.png */,
+				0FEB02331CBB5ABE00266900 /* ZQFVideoPlayer_play_big@2x.png */,
+				0FEB02341CBB5ABE00266900 /* ZQFVideoPlayer_rewind.png */,
+				0FEB02351CBB5ABE00266900 /* ZQFVideoPlayer_rewind@2x.png */,
+				0FEB02361CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in.png */,
+				0FEB02371CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in@2x.png */,
+				0FEB02381CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out.png */,
+				0FEB02391CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0FEB01FB1CBB58D500266900 /* ZQFVLCMoviePlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FEB021E1CBB58D500266900 /* Build configuration list for PBXNativeTarget "ZQFVLCMoviePlayer" */;
+			buildPhases = (
+				0FEB01F81CBB58D500266900 /* Sources */,
+				0FEB01F91CBB58D500266900 /* Frameworks */,
+				0FEB01FA1CBB58D500266900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZQFVLCMoviePlayer;
+			productName = ZQFVLCMoviePlayer;
+			productReference = 0FEB01FC1CBB58D500266900 /* ZQFVLCMoviePlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0FEB02141CBB58D500266900 /* ZQFVLCMoviePlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0FEB02211CBB58D500266900 /* Build configuration list for PBXNativeTarget "ZQFVLCMoviePlayerTests" */;
+			buildPhases = (
+				0FEB02111CBB58D500266900 /* Sources */,
+				0FEB02121CBB58D500266900 /* Frameworks */,
+				0FEB02131CBB58D500266900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0FEB02171CBB58D500266900 /* PBXTargetDependency */,
+			);
+			name = ZQFVLCMoviePlayerTests;
+			productName = ZQFVLCMoviePlayerTests;
+			productReference = 0FEB02151CBB58D500266900 /* ZQFVLCMoviePlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0FEB01F41CBB58D500266900 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zengqingfu;
+				TargetAttributes = {
+					0FEB01FB1CBB58D500266900 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					0FEB02141CBB58D500266900 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 0FEB01FB1CBB58D500266900;
+					};
+				};
+			};
+			buildConfigurationList = 0FEB01F71CBB58D500266900 /* Build configuration list for PBXProject "ZQFVLCMoviePlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0FEB01F31CBB58D500266900;
+			productRefGroup = 0FEB01FD1CBB58D500266900 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0FEB01FB1CBB58D500266900 /* ZQFVLCMoviePlayer */,
+				0FEB02141CBB58D500266900 /* ZQFVLCMoviePlayerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0FEB01FA1CBB58D500266900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEB024A1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in.png in Resources */,
+				0FEB020F1CBB58D500266900 /* LaunchScreen.storyboard in Resources */,
+				0FEB02411CBB5ABE00266900 /* ZQFVideoPlayer_pause@2x.png in Resources */,
+				0FEB02441CBB5ABE00266900 /* ZQFVideoPlayer_play.png in Resources */,
+				0FEB023A1CBB5ABE00266900 /* ZQFVideoPlayer_close.png in Resources */,
+				0FEB023F1CBB5ABE00266900 /* ZQFVideoPlayer_next@2x.png in Resources */,
+				0FEB020C1CBB58D500266900 /* Assets.xcassets in Resources */,
+				0FEB025A1CBB8D3300266900 /* ZQFVideoPlayer_fastfarword@2x.png in Resources */,
+				0FEB020A1CBB58D500266900 /* Main.storyboard in Resources */,
+				0FEB024C1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out.png in Resources */,
+				0FEB02521CBB5AE400266900 /* ZQFVLCPlayerViewController.xib in Resources */,
+				0FEB02451CBB5ABE00266900 /* ZQFVideoPlayer_play@2x.png in Resources */,
+				0FEB024D1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_out@2x.png in Resources */,
+				0FEB023B1CBB5ABE00266900 /* ZQFVideoPlayer_close@2x.png in Resources */,
+				0FEB02481CBB5ABE00266900 /* ZQFVideoPlayer_rewind.png in Resources */,
+				0FEB02491CBB5ABE00266900 /* ZQFVideoPlayer_rewind@2x.png in Resources */,
+				0FEB02461CBB5ABE00266900 /* ZQFVideoPlayer_play_big.png in Resources */,
+				0FEB023E1CBB5ABE00266900 /* ZQFVideoPlayer_next.png in Resources */,
+				0FEB02471CBB5ABE00266900 /* ZQFVideoPlayer_play_big@2x.png in Resources */,
+				0FEB02571CBB8D3300266900 /* ZQFVideoPlayer_fastback.png in Resources */,
+				0FEB023C1CBB5ABE00266900 /* ZQFVideoPlayer_cross.png in Resources */,
+				0FEB023D1CBB5ABE00266900 /* ZQFVideoPlayer_cross@2x.png in Resources */,
+				0FEB02421CBB5ABE00266900 /* ZQFVideoPlayer_pause_big.png in Resources */,
+				0FEB024B1CBB5ABE00266900 /* ZQFVideoPlayer_zoom_in@2x.png in Resources */,
+				0FEB02401CBB5ABE00266900 /* ZQFVideoPlayer_pause.png in Resources */,
+				0FEB02581CBB8D3300266900 /* ZQFVideoPlayer_fastback@2x.png in Resources */,
+				0FEB02431CBB5ABE00266900 /* ZQFVideoPlayer_pause_big@2x.png in Resources */,
+				0FEB02591CBB8D3300266900 /* ZQFVideoPlayer_fastfarword.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEB02131CBB58D500266900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FEB01F81CBB58D500266900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEB02071CBB58D500266900 /* ViewController.m in Sources */,
+				0FEB02511CBB5AE400266900 /* ZQFVLCPlayerViewController.m in Sources */,
+				0FEB02041CBB58D500266900 /* AppDelegate.m in Sources */,
+				0FEB02011CBB58D500266900 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0FEB02111CBB58D500266900 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEB021A1CBB58D500266900 /* ZQFVLCMoviePlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0FEB02171CBB58D500266900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0FEB01FB1CBB58D500266900 /* ZQFVLCMoviePlayer */;
+			targetProxy = 0FEB02161CBB58D500266900 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0FEB02081CBB58D500266900 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FEB02091CBB58D500266900 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0FEB020D1CBB58D500266900 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0FEB020E1CBB58D500266900 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0FEB021C1CBB58D500266900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0FEB021D1CBB58D500266900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0FEB021F1CBB58D500266900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZQFVLCMoviePlayer/ZQFVLCMoviePlayerClass",
+				);
+				INFOPLIST_FILE = ZQFVLCMoviePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.devfu.ZQFVLCMoviePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0FEB02201CBB58D500266900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZQFVLCMoviePlayer/ZQFVLCMoviePlayerClass",
+				);
+				INFOPLIST_FILE = ZQFVLCMoviePlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.devfu.ZQFVLCMoviePlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0FEB02221CBB58D500266900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZQFVLCMoviePlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.devfu.ZQFVLCMoviePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQFVLCMoviePlayer.app/ZQFVLCMoviePlayer";
+			};
+			name = Debug;
+		};
+		0FEB02231CBB58D500266900 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZQFVLCMoviePlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.devfu.ZQFVLCMoviePlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZQFVLCMoviePlayer.app/ZQFVLCMoviePlayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0FEB01F71CBB58D500266900 /* Build configuration list for PBXProject "ZQFVLCMoviePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEB021C1CBB58D500266900 /* Debug */,
+				0FEB021D1CBB58D500266900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FEB021E1CBB58D500266900 /* Build configuration list for PBXNativeTarget "ZQFVLCMoviePlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEB021F1CBB58D500266900 /* Debug */,
+				0FEB02201CBB58D500266900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0FEB02211CBB58D500266900 /* Build configuration list for PBXNativeTarget "ZQFVLCMoviePlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FEB02221CBB58D500266900 /* Debug */,
+				0FEB02231CBB58D500266900 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0FEB01F41CBB58D500266900 /* Project object */;
+}

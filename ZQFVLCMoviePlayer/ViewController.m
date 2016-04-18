@@ -25,7 +25,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)startPlayAction:(id)sender {
-    NSString *str = @"http://7fvifx.com1.z0.glb.clouddn.com/123.mp4";
+    NSString *str = @"http://hc.yinyuetai.com/uploads/videos/common/280B015100F06F42002834D64B33F4D6.flv?sc=20c9f1802269ceda";
     ZQFVLCPlayerViewController *playerVC = [[ZQFVLCPlayerViewController alloc] initWithMediaURL:[NSURL URLWithString:str] mediaName:@"我的电影"];
     [self presentViewController:playerVC animated:YES completion:nil];
 }

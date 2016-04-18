@@ -1,6 +1,7 @@
 # ZQFVLCMoviePlayer
 用VLCKit封装集成的播放器   
-由于MobileVLCKit.framework 太大了，所以把MobileVLCKit.framework 放到了百度云上，下载地址是： [http://pan.baidu.com/s/1i4KKYR7](http://pan.baidu.com/s/1i4KKYR7)    
+由于MobileVLCKit.framework 太大了，所以把MobileVLCKit.framework 放到了百度云上，下载地址是： [http://pan.baidu.com/s/1i4KKYR7](http://pan.baidu.com/s/1i4KKYR7)   
+下载之后请将MobileVLCKit.framework解压到工程ZQFVLCMoviePlayerClass目录下    
 作者的博客是：[http://blog.csdn.net/techfu](http://blog.csdn.net/techfu)也欢迎大家参观
 
 
